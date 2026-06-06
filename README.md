@@ -73,5 +73,7 @@ Para entender cómo cooperan las capas con la inclusión de JavaScript, este es 
 
 ## Detalles del Proyecto y Créditos
 **Tecnologías Utilizadas**: HTML5, CSS3, JavaScript (Vanilla), Node.js, PostgreSQL.
+
 **Autores**: Mariana Salazar, Hernán Pinzón, David Galindo, David Castro, Jimmy González.
+
 **Fecha**: 06/06/2026
