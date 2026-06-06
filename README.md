@@ -1,5 +1,5 @@
 ## Bienvenido a TITAN V 
-1. ¿Qué Problema Resuelve?
+**1. ¿Qué Problema Resuelve?**
 "Este sistema está diseñado para apoyar a pequeñas y medianas empresas de construcción en la gestión de la información y en el seguimiento organizado y flexible de sus obras. TITAN V centraliza el registro constante de actualizaciones, permitiendo adjuntar contenido multimedia (imágenes) y habilitando secciones de comentarios. Es una herramienta clave para optimizar los procesos logísticos y de comunicación, ofreciendo una solución eficiente y sin costos adicionales para mantener informadas a las partes interesadas."
 ---
 
@@ -11,9 +11,13 @@
 ## Funcionalidades principales
 
 -[ ] Registro e inicio de sesión seguro.
+
 -[ ] Creación y gestión de proyectos.
+
 -[ ] Soporte para contenido multimedia (imágenes).
+
 -[ ] Sistema de actualizaciones periódicas.
+
 -[ ] Módulo de seguimiento y control del estado del proyecto.
 
 ## Metodología de Desarrollo
