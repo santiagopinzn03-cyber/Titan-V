@@ -38,6 +38,6 @@
 
 ## Equipo de Desarrollo y Créditos
 
-**Autores**Mariana salazar- Hernan pinzon-David galindo-David castro-Jimmy gonzalez
+**Autores**: Mariana salazar- Hernan pinzon-David galindo-David castro-Jimmy gonzalez
 
 **Fecha de creación**: 25 de abril de 2025
