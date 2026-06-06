@@ -1,3 +1,5 @@
+![image alt].(https://github.com/santiagopinzn03-cyber/Titan-V/blob/f89ac7fc908d09e619596ee522b7b1782967560e/WhatsApp%20Image%202026-06-05%20at%202.53.10%20PM.jpeg).
+
 ## Bienvenido a TITAN V 
 1. ¿Qué Problema Resuelve?
 "Este sistema está diseñado para apoyar a pequeñas y medianas empresas de construcción en la gestión de la información y en el seguimiento organizado y flexible de sus obras. TITAN V centraliza el registro constante de actualizaciones, permitiendo adjuntar contenido multimedia (imágenes) y habilitando secciones de comentarios. Es una herramienta clave para optimizar los procesos logísticos y de comunicación, ofreciendo una solución eficiente y sin costos adicionales para mantener informadas a las partes interesadas."
