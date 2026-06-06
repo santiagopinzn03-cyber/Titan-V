@@ -1,4 +1,4 @@
-![image alt].(https://github.com/santiagopinzn03-cyber/Titan-V/blob/f89ac7fc908d09e619596ee522b7b1782967560e/WhatsApp%20Image%202026-06-05%20at%202.53.10%20PM.jpeg).
+![image alt](https://github.com/santiagopinzn03-cyber/Titan-V/blob/f89ac7fc908d09e619596ee522b7b1782967560e/WhatsApp%20Image%202026-06-05%20at%202.53.10%20PM.jpeg).
 
 ## Bienvenido a TITAN V 
 1. ¿Qué Problema Resuelve?
