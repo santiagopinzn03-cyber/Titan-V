@@ -22,22 +22,52 @@
 
 -[ ] Módulo de seguimiento y control del estado del proyecto.
 
-## Metodología de Desarrollo
-
+## Metodología de Desarrollo 
 **Metodología elegida**: Scrum.
 
-**¿Por qué?**: Se seleccionó Scrum porque proporciona una mayor flexibilidad, asegura la calidad del producto final y aumenta la productividad del equipo. Sus ciclos iterativos e incrementales son los que mejor se ajustan a la naturaleza cambiante y a los requerimientos de nuestro proyecto.
+**¿Por qué?**: Se seleccionó Scrum porque proporciona una mayor flexibilidad, asegura la calidad del producto final y aumenta la productividad del equipo. Sus ciclos iterativos e incrementales (Sprints) son los que mejor se ajustan a la naturaleza cambiante de la construcción y a los requerimientos del proyecto, permitiendo además una distribución equitativa de tareas dentro del equipo de desarrollo.
 
-## Tecnologías Utilizadas
+## Arquitectura de Software (Metodología en Capas)
 
--**Backend**: Node.js / JavaScript (Elegido principalmente por el conocimiento previo del equipo y con el objetivo de profundizar y ampliar nuestras competencias técnicas). Nota: Se corrigió "java.js" a "Node.js/JavaScript", que es el término técnico correcto.
+Para garantizar el orden, la escalabilidad y permitir que el equipo trabaje en paralelo, el proyecto se estructura bajo una Arquitectura en Capas:
 
--**Base de Datos**: PostgreSQL (Seleccionada por su robustez, facilidad de integración y la experiencia previa del equipo de desarrollo).
+**I. Capa de Presentación (Frontend)**
+Es la interfaz gráfica con la que interactúan los usuarios. Recibe las acciones del usuario y muestra las respuestas del sistema de forma dinámica.
 
--**Frontend**: HTML5 y CSS (Elegidos por ser estándares web sólidos, estructurados y seguros para construir la interfaz de usuario).
+**HTML5**: Define la estructura semántica de los formularios, paneles de control y vistas del proyecto.
 
-## Equipo de Desarrollo y Créditos
+**CSS**: Modela el diseño visual, la disposición de los elementos y asegura la adaptabilidad en dispositivos móviles (Responsive Design).
 
-**Autores**: Mariana salazar- Hernan pinzon-David galindo-David castro-Jimmy gonzalez
+**JavaScript (Manejo del DOM y API)**: Aporta la interactividad necesaria. Se encarga de capturar los eventos del usuario (como clics o envíos de formularios), manipular el DOM para actualizar la pantalla en tiempo real (por ejemplo, insertar un nuevo comentario en la lista sin recargar la página) y realizar la validación de campos en el cliente.
 
-**Fecha de creación**: 25 de abril de 2025
+**II. Capa de Rutas y Entrada (API Routing)**
+Tecnología: Node.js (Express).
+
+**Función**: Actúa como la puerta de entrada al servidor. Recibe las peticiones HTTP asíncronas enviadas por el JavaScript del frontend (endpoints como /api/proyectos) y las redirige al controlador correspondiente.
+
+**III. Capa de Lógica de Negocio (Controladores)**
+**Tecnología**: Node.js.
+
+**Función**: Es el cerebro del backend. Aplica las reglas del sistema: valida la autenticidad de las sesiones, procesa las imágenes subidas por los constructores y verifica que los usuarios tengan los permisos requeridos antes de autorizar cualquier cambio.
+
+**IV. Capa de Acceso a Datos (Modelos)**
+Tecnología: Node.js (SQL / ORM).
+
+**Función**: Traduce las órdenes de la lógica de negocio en consultas de base de datos. Es la única capa autorizada para comunicarse directamente con el sistema de almacenamiento.
+
+**V. Capa de Almacenamiento (Base de Datos)**
+**Tecnología**: PostgreSQL.
+
+**Función**: Repositorio relacional encargado de almacenar de forma permanente y segura toda la información de los proyectos, usuarios, imágenes y comentarios.
+
+## Flujo de Interacción: El rol de JavaScript y el DOM
+Para entender cómo cooperan las capas con la inclusión de JavaScript, este es el flujo que sigue una acción común dentro de la app (como publicar un comentario):
+-El usuario escribe un comentario en la interfaz (HTML/CSS).
+-JavaScript intercepta el evento de envío, valida que el texto no esté vacío y realiza una petición asíncrona (fetch) al servidor backend (Node.js).
+-El servidor procesa la petición y ordena guardar el comentario en la base de datos (PostgreSQL).
+-Al recibir la confirmación de éxito del servidor, JavaScript modifica el DOM de la página web de manera inmediata, dibujando el nuevo comentario en la pantalla del usuario de forma fluida y sin refrescar el navegador.
+
+## Detalles del Proyecto y Créditos
+**Tecnologías Utilizadas**: HTML5, CSS3, JavaScript (Vanilla), Node.js, PostgreSQL.
+**Autores**: Mariana Salazar, Hernán Pinzón, David Galindo, David Castro, Jimmy González.
+**Fecha**: 06/06/2026
