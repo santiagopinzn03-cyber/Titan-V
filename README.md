@@ -62,9 +62,13 @@ Tecnología: Node.js (SQL / ORM).
 
 ## Flujo de Interacción: El rol de JavaScript y el DOM
 Para entender cómo cooperan las capas con la inclusión de JavaScript, este es el flujo que sigue una acción común dentro de la app (como publicar un comentario):
+
 -El usuario escribe un comentario en la interfaz (HTML/CSS).
+
 -JavaScript intercepta el evento de envío, valida que el texto no esté vacío y realiza una petición asíncrona (fetch) al servidor backend (Node.js).
+
 -El servidor procesa la petición y ordena guardar el comentario en la base de datos (PostgreSQL).
+
 -Al recibir la confirmación de éxito del servidor, JavaScript modifica el DOM de la página web de manera inmediata, dibujando el nuevo comentario en la pantalla del usuario de forma fluida y sin refrescar el navegador.
 
 ## Detalles del Proyecto y Créditos
